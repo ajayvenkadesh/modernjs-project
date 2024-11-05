@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="./order_styles.css">
+</head>
+<body>
+
+<h2>Order Details</h2>
+<form id="orderForm">
+    <div class="form-group">
+        <label for="orderId">Order Id:</label>
+        <input type="text" id="orderId" required>
+        <div id="orderIdError" class="error"></div>
+    </div>
+    <div class="form-group">
+        <label for="orderDate">Order Date:</label>
+        <input type="date" id="orderDate" required>
+        <div id="orderDateError" class="error"></div>
+    </div>
+    <div class="form-group">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" required>
+        <div id="customerNameError" class="error"></div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" required>
+        <div id="emailError" class="error"></div>
+    </div>
+    <div class="form-group">
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" maxlength="10" required>
+        <div id="contactNumberError" class="error"></div>
+    </div>
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" minlength="10" required></textarea>
+        <div id="addressError" class="error"></div>
+    </div>
+
+    <h3>Order Items</h3>
+    <div id="orderItems"></div>
+    <button type="button" class="add-item-btn" onclick="addItem()">+ Add Order Item</button>
+
+    <div class="form-group">
+        <label for="totalAmount">Total Amount (INR):</label>
+        <input type="text" id="totalAmount" readonly value="0">
+    </div>
+
+    <button type="submit" class="submit-btn">Order Now</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./order.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "reservations": [
+    {
+      "id": "7a47"
+    },
+    {
+      "id": "6685",
+      "name": "qwe",
+      "email": "asd@gmail.com",
+      "phone": "1234567852",
+      "date": "2024-10-01",
+      "people": "2"
+    },
+    {
+      "id": "8bc9",
+      "name": "adb",
+      "email": "qwe@gmail.com",
+      "phone": "4567851231",
+      "date": "2024-10-15",
+      "people": "2"
+    }
+  ]
+}

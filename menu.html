@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Display</title>
+    <link rel="stylesheet" href="./menu_styles.css"> <!-- Link to CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./menu.js" defer></script> <!-- Link to JavaScript -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="order.html">Place Order</a></li>
+                <li><a href="#" class="book-table-btn">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h1>Menu</h1>
+            <div class="filter-section">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categorySelect" onchange="filterMenu()">
+                    <option value="">All</option>
+                    <option value="Starters">Starters</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Desserts">Desserts</option>
+                </select>
+            </div>
+            <table id="menuTable">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

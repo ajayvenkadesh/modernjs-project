@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./reserve.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">Spice Garden</div>
+            
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="order.html">Place Order</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Book a Table Button -->
+            <a href="#" class="btn book-btn">Book a Table</a>
+        </div>
+    </header>
+
+    <section class="resturant">
+        <img src="./Screenshots/pexels-mali-maeder-64208.webp" alt="Delicious Food" class="responsive-image">
+        
+            <div class="text-overlay">
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif;">Spice Garden</p>
+                <h1 style="color: black;">NUTRITIOUS AND TASTY</h1>
+            </div>
+    </section>
+
+  
+    <section class="Imgcontainer">
+        <div class="item">
+            <img src="./Screenshots/screenshot-779-500x500.webp" alt="Grilled Paneer" class="circular-image">
+            <h3>Grilled Paneer with Potatoes</h3>
+            <p>Paneer, Potatoes, Rice, Tomatoes</p>
+        </div>
+        <div class="item">
+            <img src="./Screenshots/food-bill-2024-01-5bb33378c8c782d8e5253e53096d2693.jpg" alt="Pasta with Peperoni" class="circular-image">
+            <h3>Pasta con i peperoni cruschi</h3>
+            <p>Pasta, Corn and Peperoni</p>
+        </div>
+        <div class="item">
+            <img src="./Screenshots/food-dish-06.png" alt="Green Bean Casserole" class="circular-image">
+            <h3>Green bean casserole</h3>
+            <p>Beans, Potato, Onion and Paratha</p>
+        </div>
+        <div class="item">
+            <img src="./Screenshots/41242d5de6feaa70927881d827ec51f2.jpg" alt="Fettuccine al  Pomodoro" class="circular-image">
+            <h3>Fettuccine al <br>Pomodoro</h3>
+            <p>Lettuce, Tomato, Wheat and Millets</p>
+        </div>
+    </section>
+
+    <section class="aboutSec">
+        <div class="aboutImg">
+            <img src="Screenshots/about1.png" alt="Food Image 1">
+            <img src="Screenshots/about2.png" alt="Food Image 2" class="secondImg">
+        </div>
+        <div class="abouttext">
+            <h2>About Spice Garden</h2>
+            <p>At Spice Garden, we are more than just a restaurant; we are a culinary journey, a symphony of flavors, and a celebration of culture. Our passion for authentic cuisine and dedication to exceptional dining experiences have made us a beloved destination for food enthusiasts and connoisseurs alike.With a rich heritage of flavors, our dishes are carefully crafted using time-honored recipes and the finest ingredients sourced from around the world. We invite you to embark on a gastronomic adventure with us, where every meal is a story waiting to be savored.</p>
+            <p>Mon - Fri:<strong> 8 AM to 11 PM</strong></p>
+            <h3>+1-978-321-4532</h3>
+        </div>
+    </section>
+
+
+    <section class="cateringsection">
+        <h2>Catering Services</h2>
+        <div class="servicescontainer">
+            <div class="servicecard">
+                <img src="Screenshots/service11.png" alt="Birthday Icon">
+                <h3>Birthday Party</h3>
+                <p>Make your special day even more memorable with our catering services tailored for birthday celebrations. From delicious cakes to a wide range of cuisines, we’ve got you covered.</p>
+            </div>
+
+            <div class="servicecard">
+                <img src="Screenshots/service2.png" alt="Business Icon">
+                <h3>Business Meetings</h3>
+                <p>Elevate your corporate events with our professional catering services. We provide gourmet meals and a comfortable atmosphere for successful business meetings.</p>
+            </div>
+
+            <div class="servicecard">
+                <img src="Screenshots/service3.png" alt="Wedding Icon">
+                <h3>Wedding Party</h3>
+                <p>Your special day deserves the finest catering. Let us create a memorable wedding feast that reflects your love story and delights your guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="menucontainer"></div>
+        <h1 class="menutitle">Specialties Our Menu</h1>
+        <div class="menugrid">
+            <div class="menuitem">
+                <img src="Screenshots/menu1.png" alt="Grilled Paneer with Potatoes">
+                <h2>Grilled Paneer with Potatoes</h2>
+                <p>Paneer, Potato, Rice and Tomatoes</p>
+                <span class="price">275 INR</span>
+                <button>Order Now</button>
+            </div>
+            <div class="menuitem">
+                <img src="Screenshots/menu2.png" alt="Pasta con i peperoni cruschi">
+                <h2>Pasta con i peperoni cruschi</h2>
+                <p>Pasta, Corn, Peperoni and Tomato Sauce</p>
+                <span class="price">350 INR</span>
+                <button>Order Now</button>
+            </div>
+            <div class="menuitem">
+                <img src="Screenshots/menu3.png" alt="Green bean casserole">
+                <h2>Green bean casserole</h2>
+                <p>Beans, Potato, Onion and Paratha</p>
+                <span class="price">225 INR</span>
+                <button>Order Now</button>
+            </div>
+            <div class="menuitem">
+                <img src="Screenshots/menu4.png" alt="Fettuccine al Pomodoro">
+                <h2>Fettuccine al <br> Pomodoro</h2>
+                <p>Lettuce, Tomato, Wheat and Millets</p>
+                <span class="price">325 INR</span>
+                <button>Order Now</button>
+            </div>
+            <div class="menuitem">
+                <img src="Screenshots/menu5.png" alt="Buttery Sautéed Mushrooms with Fresh Herbs">
+                <h2>Buttery Mushrooms with Fresh Herbs</h2>
+                <p>Mushroom, Paratha, Herbs and Tomatoes</p>
+                <span class="price">275 INR</span>
+                <button>Order Now</button>
+            </div>
+            <div class="menuitem">
+                <img src="Screenshots/menu6.png" alt="Honey dipped with Waffle dessert">
+                <h2>Honey dipped with Waffle dessert</h2>
+                <p>Honey, Waffle, Strawberries and Cherries</p>
+                <span class="price">300 INR</span>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="chefsection">
+        <h1 class="sectiontitle">Our Master Chef</h1>
+        <div class="chefgrid">
+            <div class="chefcard">
+                <img src="Screenshots/chef1.png" alt="Restaurant Owner">
+                <h2>Restaurant Owner</h2>
+                <p>John Doe</p>
+                <div class="socialicons">
+                    <img  src="Screenshots/twitter.png" alt="twitter">
+                    <img src="Screenshots/facebook.png" alt="facebook">
+                    <img src="Screenshots/instagram.png" alt="instagram">
+                </div>
+            </div>
+            <div class="chefcard">
+                <img src="Screenshots/chef2.png" alt="Master Chef">
+                <h2>Master Chef</h2>
+                <p>Jane Smith</p>
+                <div class="socialicons">
+                    <img src="Screenshots/twitter.png" alt="twitter">
+                    <img src="Screenshots/facebook.png" alt="facebook">
+                    <img src="Screenshots/instagram.png" alt="instagram">
+                </div>
+            </div>
+            <div class="chefcard">
+                <img src="Screenshots/chef3.png" alt="Master Chef">
+                <h2>Master Chef</h2>
+                <p>María García</p>
+                <div class="socialicons">
+                    <img src="Screenshots/twitter.png" alt="twitter">
+                    <img src="Screenshots/facebook.png" alt="facebook">
+                    <img src="Screenshots/instagram.png" alt="instagram">
+                </div>
+            </div>
+            <div class="chefcard">
+                <img src="Screenshots/chef4.png" alt="Chef">
+                <h2>Chef</h2>
+                <p>Michael Johnson</p>
+                <div class="socialicons">
+                    <img src="Screenshots/twitter.png" alt="twitter">
+                    <img src="Screenshots/facebook.png" alt="facebook">
+                    <img src="Screenshots/instagram.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="order">
+    <img src="./Screenshots/ChIJmY-gLagWrjsRRZcdJUK-5zw_654099525dbcf0.78443627.jpg" alt="Delicious Food" class="orderImg">
+    
+    <div class="bookingform">
+        <h1>Book a Table</h1>
+        <h2>Make Reservation</h2>
+        <form id="reservation-form">
+            <div class="formgroup">
+                <input type="text" name="name" placeholder="Name" required pattern="^[a-zA-Z\s]+$" title="Please enter a valid name (letters and spaces only)">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="formgroup">
+                <input type="tel" name="phone" placeholder="Phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
+                <input type="date" name="date" required>
+            </div>
+            <div class="formgroup">
+                <select name="people" required>
+                    <option value="" disabled selected>1 Person</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                </select>
+            </div>
+            <button type="submit">Make a Reservation</button>
+        </form>
+        <div id="success-message" style="display:none; color: green;">You have successfully booked a table!</div>
+    </div> 
+</section>
+
+<section class="recentposts">
+    <h2>Recent Posts</h2>
+    <div class="postsgrid">
+        <!-- Post 1 -->
+        <div class="post">
+            <img src="Screenshots/post1.png" alt="Exploring Flavors From Around the World">
+            <div class="postinfo">
+                <p class="date">September 15, 2023</p>
+                <h3>Exploring Flavors From Around the World</h3>
+                <a href="#" class="readmore">Read more</a>
+            </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="post">
+            <img src="Screenshots/post2.png" alt="The Art of Spice: A Culinary Journey">
+            <div class="postinfo">
+                <p class="date">August 28, 2023</p>
+                <h3>The Art of Spice: <br>A Culinary <br>Journey</h3>
+                <a href="#" class="readmore">Read more</a>
+            </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="post">
+            <img src="Screenshots/post3.png" alt="Taste the Delicious Food in India and Europe">
+            <div class="postinfo">
+                <p class="date">July 10, 2023</p>
+                <h3>Taste the Delicious Food in India and Europe</h3>
+                <a href="#" class="readmore">Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials">
+    <h2>Happy Customers</h2>
+    <div class="testimonialsgrid">
+        <!-- Testimonial 1 -->
+        <div class="testimonialcard">
+            <img src="./Screenshots/m11685526196.jpg" alt="John Doe">
+            <blockquote>
+                "Spice Garden is a culinary gem! The flavors in every dish are exceptional, and the ambiance is truly welcoming. My family and I have had countless memorable dinners here."
+            </blockquote>
+            <p class="customername">Lily Doe</p>
+            <p class="customerrole">Customer</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonialcard">
+            <img src="./Screenshots/17.jpg" alt="Jane Smith">
+            <blockquote>
+                "I recently hosted a birthday party at Spice Garden, and it was a huge success. The catering service and the food quality were outstanding. I couldn't be happier with the experience!"
+            </blockquote>
+            <p class="customername">Jane Smith</p>
+            <p class="customerrole">Customer</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonialcard">
+            <img src="./Screenshots/23.jpg" alt="Maria Garcia">
+            <blockquote>
+                "My wedding reception at Spice Garden was nothing short of magical. The venue, the menu, and the service exceeded our expectations. Our guests still rave about it!"
+            </blockquote>
+            <p class="customername">Maria Garcia</p>
+            <p class="customerrole">Customer</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="contactsection">
+    <div class="containers">
+        <div class="contactinfo">
+            <div class="map">
+                <!-- Embedded Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=...your_map_link..." 
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contactform">
+                <h2>Contact Us</h2>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="contactdetails">
+            <h3 style="color: black;">Contact Information</h3>
+            <div class="info">
+                
+                <p><strong>Address<br></strong> Connaught Place, New Delhi, 110001</p>
+                <p><strong >Phone<br></strong> <a href="tel:+911234567890">+91-123-456-7890</a></p>
+                <p><strong>Email<br></stron> <a href="mailto:info@spicegarden.com">info@spicegarden.com</a></p>
+                <p><strong>Website<br></strong> <a href="https://spicegarden.com">spicegarden.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footercontent">
+        <div class="footersectionabout">
+            <h3>Spice Garden</h3>
+            <p>Discover the exquisite flavors of our cuisine. Spice Garden is your destination for culinary excellence.</p>
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footersectionabout">
+            <h3>Open Hours</h3>
+            <p>Monday - Thursday: 9:00 AM - 12:00 AM</p>
+            <p>Friday - Saturday: 9:00 AM - 2:00 AM</p>
+            <p>Sunday: 9:00 AM - 2:00 AM</p>
+        </div>
+        <div class="footersectionabout">
+        <div class="footersectionnewsletter">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter Email Address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="footerbottom">
+        &copy; 2023 All rights reserved | Spice Garden
+    </div>
+</footer>
+
+
+</body>
+</html>

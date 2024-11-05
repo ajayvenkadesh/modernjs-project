@@ -1,0 +1,73 @@
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.book-table-btn {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f39c12;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #f39c12;
+    color: white;
+}
+.menu-section h1{
+text-align: center;
+}
+.filter-section{
+    text-align: center;
+}
+body{
+    background-color:bisque;
+        
+}
